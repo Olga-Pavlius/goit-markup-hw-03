@@ -46,6 +46,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
   }
   
   .page-header {
@@ -219,6 +222,7 @@ body {
    display: flex;
    align-items: center;
    border-radius: 0 0 4px 4px;
+   gap: 24px;
 }
 
 .team-title {
