@@ -1,9 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
-    width: 1158px;
     color: #434455;
     background-color: #fff;
-    margin: 0;
   }
   
   h1, h2, h3,
@@ -21,6 +19,7 @@ body {
   
   a {
     text-decoration: none;
+    display: block;
   }
 
   .visually-hidden {
@@ -38,7 +37,6 @@ body {
   }
 
   .conteiner {
-    justify-content: center;
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
@@ -48,7 +46,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15px;
   }
   
   .page-header {
@@ -58,9 +55,6 @@ body {
   .header-nav {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 40px;
   }
 
   .nav-list {
@@ -131,6 +125,16 @@ body {
 
 .hero-images {
     background-color: #2e2f42;
+    background-image: url(шлях до зображення);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+	to bottom, 
+	rgba(255, 0, 0, 0.3), 
+	rgba(255, 0, 0, 0.3)
+	),
+	url(шлях до зображення);
     padding: 188px 0;
 
 }  
@@ -143,6 +147,9 @@ body {
     text-align: center;
     color: #fff;
     max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
 }
 
 .button {
@@ -164,6 +171,8 @@ body {
     justify-content: flex-start;
     flex-direction: row;
     gap: 10px;
+    margin: 0 auto;
+    display: block;
 }
 
 .button:hover, 
@@ -181,11 +190,6 @@ body {
 }
 
 .tools-item {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 8px;
     width: calc((100% - 72px) / 4);
 }
 
@@ -203,6 +207,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    margin: 0;
 }
 
 .our-team {
@@ -213,13 +218,7 @@ body {
 .team {
    display: flex;
    align-items: center;
-   justify-content: center;
-   flex-direction: column;
    border-radius: 0 0 4px 4px;
-   padding: 0px 0px 32px 0px;
-   width: 264px;
-   height: 380px;
-   gap: 24px;
 }
 
 .team-title {
@@ -241,7 +240,6 @@ body {
 
 .team-images {
   display: block;
-  width: calc((100% - 72px) / 4);
 }
 
 .card-container {
@@ -264,6 +262,7 @@ body {
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
+    margin: 0;
 }
 
 .portfolio {
@@ -272,24 +271,12 @@ body {
 }
 
 .portfolio-item {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 8px;
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
-  padding: 32px 16px;
-  width: 360px;
-  height: 120px;
   width: calc((100% - 48px) / 3);
 }
 
 
 .portfolio-title {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -354,4 +341,5 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    max-width: 264px;
 }
